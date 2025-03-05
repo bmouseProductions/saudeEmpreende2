@@ -4,11 +4,7 @@ const plugin = require("tailwindcss/plugin");
 module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
-    extend: {
-      fontFamily: {
-        newBlackSemi: ['newBlackSemi', 'sans-serif'],
-      }
-    },
+    extend: {},
   },
   plugins: [
     plugin(function ({ addUtilities }) {
