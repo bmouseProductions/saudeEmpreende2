@@ -21,9 +21,17 @@
 }
 
 @font-face {
+    font-family: 'newBlacklight';
+    src: url('fonts/WOFF&WOFF2/NewBlackTypeface-UltraLight.woff2') format('woff2'),
+         url('fonts/WOFF&WOFF2/NewBlackTypeface-UltraLight.woff') format('woff');
+    font-weight: 200; 
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'franie';
-    src: url('fonts/franie/Franie-Regular.woff2') format('woff2');
-    font-weight: 400; 
+    src: url('fonts/franie/Franie-ExtraLight.woff2') format('woff2');
+    font-weight: 200; 
     font-style: normal;
 }
 
@@ -37,6 +45,10 @@
 
 .fontNewBlackNormal {
     font-family: 'newBlackNormal', sans-serif;
+}
+
+.fontNewBlacklight {
+    font-family: 'newBlacklight', sans-serif;
 }
 
 @keyframes moveUpDown {
