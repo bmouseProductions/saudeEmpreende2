@@ -20,8 +20,19 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'franie';
+    src: url('fonts/franie/Franie-Regular.woff2') format('woff2');
+    font-weight: 400; 
+    font-style: normal;
+}
+
 .fontNewBlackSemi {
     font-family: 'newBlackSemi', sans-serif;
+}
+
+.franie{
+    font-family: 'franie', sans-serif;
 }
 
 .fontNewBlackNormal {
