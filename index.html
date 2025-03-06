@@ -10,32 +10,37 @@
     <link rel="shortcut icon" href="assets/icone-saude-empreende.png" type="image/x-icon">
 </head>
 <body>
-    <header class="flex flex-wrap lg:flex-nowrap py-16 justify-around container mx-auto px-4">
+    <header class="flex flex-wrap lg:flex-nowrap py-16 my-16 justify-around container mx-auto px-4 rounded-xl" style="
+    background: linear-gradient(180deg, 
+        #153F3D 6%, 
+        #143837 24%, 
+        #143130 41%, 
+        #14302F 57%
+    );
+    color: white;
+">
         <div class="relative w-full lg:w-1/2 flex justify-center lg:justify-start mb-6 lg:mb-0">
             <div class="relative w-full max-w-md lg:max-w-none">
-                <img src="assets/tom.webp" class="rounded-xl w-full h-auto" 
+                <img src="assets/roberta.webp" width="364" height="413" class="rounded-xl w-96 lg:w-auto" 
                     style="background: linear-gradient(180deg, #153F3D 0%, #143837 10%, #143130 34%, #14302F 100%);"  
                     alt="fundo background">
-                <img src="assets/logoBmouse.svg" 
-                    class="absolute top-5 left-5" 
-                    width="30"
-                    height="30"
-                    alt="logo-bmouse">
             </div>
         </div>
         <div class="w-full lg:w-1/2 px-4 lg:px-10 mx-auto flex flex-col ">
             <img src="assets/logo-saude-empreende.svg" alt="logo" class="mx-auto w-44 md:w-64">
         
-            <h1 class="fontNewBlacklight pt-4 text-2xl lg:text-6xl font-extralight uppercase">
-                Seja um <span class="fontNewBlackSemi font-semibold">colunista</span>
+            <h1 class="fontNewBlacklight pt-4 text-2xl lg:text-4xl font-extralight uppercase">
+                lance seu <br>
+infoproduto de sucesso! 
             </h1>
+            <img src="assets/linha.png" class="w-full lg:w-auto pt-10" width="414" height="1" alt="linha">
         
-            <h2 class="fontNewBlackSemi font-semibold uppercase text-base md:text-lg lg:text-xl py-3">
-                Compartilhe seu conhecimento e fortaleça sua autoridade no setor da saúde!
+            <h2 class="fontNewBlackSemi font-semibold uppercase text-base md:text-lg lg:text-xl py-5">
+                Transforme Seu Conhecimento em um Produto Digital de Alto Valor
             </h2>
         
             <h3 class="franie font-normal text-sm md:text-base lg:text-lg leading-relaxed">
-                O Saúde Empreende é mais do que uma plataforma: é um movimento que capacita e conecta profissionais da saúde, oferecendo insights estratégicos sobre gestão, marketing e inovação no setor. Agora, você tem a oportunidade de se tornar um colunista e compartilhar sua expertise com milhares de profissionais que buscam crescimento e diferenciação no mercado.
+                Você é um especialista e quer levar seu conhecimento para milhares de pessoas? Com o Lance Seu Infoproduto de Sucesso, nós cuidamos de todo o processo para que seu lançamento seja um sucesso absoluto.
             </h3>
         
             <img src="assets/arrow.webp" class="mx-auto pt-6 w-10 md:w-12 animate-updown" alt="seta">
@@ -43,204 +48,159 @@
         
     </header>
 
-    <section class="flex flex-wrap lg:flex-nowrap py-5 items-center rounded-xl justify-around container mx-auto mb-32 px-4" 
-    style="background: linear-gradient(180deg, #153F3D 0%, #143837 10%, #143130 34%, #14302F 100%);">
-
-    <div class="w-full lg:w-1/2 pt-10 lg:pt-20 px-4 lg:px-32 pb-10 lg:pb-48">
-        <img src="assets/logoBmouse.svg" class="pb-10 lg:pb-20 mx-auto lg:mx-0" width="30" height="30" alt="logo-bmouse">
-        <h1 class="franie  pt-4 text-white text-center lg:text-left text-2xl lg:text-4xl font-normal uppercase">Por que ser <br> <span class="fontNewBlackSemi font-semibold">um colunista?</span></h1>
-        <img src="assets/linha.png" class="w-full lg:w-auto pt-10" width="414" height="1" alt="linha">
-        
-        <h2 class="fontNewBlackSemi font-semibold uppercase text-lg lg:text-xl py-3 text-white pt-8 lg:pt-14  lg:text-left">
-            Aumente sua visibilidade e autoridade
-        </h2>
-        
-        <h3 class="franie font-normal uppercase text-base lg:text-xl py-3 text-white  lg:text-left">
-            📢 Publique seus artigos em uma plataforma em expansão no setor da saúde
-        </h3>
-        
-        <h3 class="franie font-normal uppercase text-base lg:text-xl py-3 text-white  lg:text-left">
-            🏆 Associe seu nome a um dos maiores hubs de gestão e empreendedorismo médico.
-        </h3>
-        
-        <h3 class="franie font-normal uppercase text-base lg:text-xl py-3 text-white  lg:text-left">
-            💡 Posicione-se como referência na sua especialidade.
-        </h3>
-    </div>
-
-    <div class="w-full hidden lg:w-1/2 lg:flex justify-center lg:justify-end items-center">
-        <img src="assets/imagem2.webp" class="w-full max-w-lg lg:max-w-none h-auto" width="675.76" height="450.913" alt="imagem 2">
-    </div>
-</section>
 
 
-<section class="pb-16" id="form">
-    <div class="w-full lg:w-2/3 mx-auto pt-8 px-4 lg:px-8">
-        <h2 class="fontNewBlackSemi font-semibold uppercase text-xl lg:text-4xl text-center mb-6">Seja um Colunista</h2>
-        <p class="text-center text-base lg:text-lg franie mb-6">Compartilhe seu conhecimento e torne-se uma referência no setor da saúde! Preencha o formulário abaixo, analisaremos suas informações e entraremos em contato em breve.</p>
-    
-        <form action="#" method="POST" class="space-y-6">
-            
-            <!-- Campo de Input Personalizado -->
-            <div class="relative">
-                <input type="text" id="nome" name="nome" required class="peer w-full border border-gray-400 rounded-xl px-4 py-3 bg-transparent focus:outline-none focus:ring-2 focus:ring-green-500" placeholder=" " />
-                <label for="nome" class="absolute left-4 top-3 text-gray-500 text-sm transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-1 peer-focus:text-xs peer-focus:text-green-600">Nome Completo*</label>
-            </div>
-            
-            <!-- Outros campos seguindo o mesmo estilo -->
-            <div class="relative">
-                <input type="email" id="email" name="email" required class="peer w-full border border-gray-400 rounded-xl px-4 py-3 bg-transparent focus:outline-none focus:ring-2 focus:ring-green-500" placeholder=" " />
-                <label for="email" class="absolute left-4 top-3 text-gray-500 text-sm transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-1 peer-focus:text-xs peer-focus:text-green-600">E-mail Profissional*</label>
-            </div>
-    
-            <div class="relative">
-                <input type="text" id="telefone" name="telefone" class="peer w-full border border-gray-400 rounded-xl px-4 py-3 bg-transparent focus:outline-none focus:ring-2 focus:ring-green-500" placeholder=" " />
-                <label for="telefone" class="absolute left-4 top-3 text-gray-500 text-sm transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-1 peer-focus:text-xs peer-focus:text-green-600">Telefone/WhatsApp</label>
-            </div>
-    
-            <div class="relative">
-                <input type="text" id="especialidade" name="especialidade" required class="peer w-full border border-gray-400 rounded-xl px-4 py-3 bg-transparent focus:outline-none focus:ring-2 focus:ring-green-500" placeholder=" " />
-                <label for="especialidade" class="absolute left-4 top-3 text-gray-500 text-sm transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-1 peer-focus:text-xs peer-focus:text-green-600">Especialidade / Área de Atuação*</label>
-            </div>
-    
-            <!-- Textarea personalizado -->
-            <div class="relative">
-                <textarea id="experiencia" name="experiencia" rows="4" class="peer w-full border border-gray-400 rounded-xl px-4 py-3 bg-transparent focus:outline-none focus:ring-2 focus:ring-green-500" placeholder=" "></textarea>
-                <label for="experiencia" class="absolute left-4 top-3 text-gray-500 text-sm transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-1 peer-focus:text-xs peer-focus:text-green-600">Experiência Profissional</label>
-            </div>
-            
-            <!-- Checkbox de Aceite -->
-            <div class="flex items-center space-x-2">
-                <input type="checkbox" id="aceite" name="aceite" required class="w-5 h-5 text-green-600">
-                <label for="aceite" class="text-sm">Li e concordo com os <a href="#" class="text-green-600 underline">termos de participação como colunista</a>.</label>
-            </div>
-    
-            <!-- Botão estilizado -->
-            <div class="text-center pt-4">
-                <button  type="submit" class="bg-green-600 hover:bg-green-700 text-white font-semibold uppercase rounded-xl px-8 py-3 transition duration-300">Quero ser um colunista</button>
-            </div>
-        </form>
-    </div>
-    
-</section>
+    <section class="flex flex-wrap lg:flex-nowrap flex-1 border border-1 border-[#153E3C] py-20 mb-10 container mx-auto rounded-xl px-10 lg:px-0">
 
-<section class="flex flex-wrap lg:flex-nowrap flex-1 border border-1 border-[#153E3C] py-10 container mx-auto rounded-xl px-4 lg:px-0">
+        <div class="w-full lg:w-1/2 mt-5 lg:mt-0">
+            <div class="mx-auto">
+                <img src="assets/computer.webp" alt="computador" height="398" class="mx-auto">
 
-    <div class="w-full lg:w-1/2 mt-5 lg:mt-10">
-        <div class="flex justify-center items-center flex-col">
-            <h1 class="fontNewBlackSemi font-semibold pt-4 text-4xl lg:text-5xl uppercase">Quem pode<br>ser colunista?</h1>
-            <h2 class="franie font-normal pt-4 text-base lg:text-2xl uppercase">Buscamos profissionais<br>com experiência em:</h2>
+            </div>
+            <div class="flex max-w-lg mx-auto flex-col text-left">
+                <h1 class="fontNewBlackSemi font-semibold pt-4 text-4xl lg:text-5xl uppercase">O Que Você 
+                    <br>Vai Receber?</h1>
+                    <div class="mx-auto max-w-lg">
+                        <h2 class="franie font-normal pt-4   text-base lg:text-base uppercase">Independente do plano escolhido, garantimos um lançamento profissional e estruturado, com:</h2>
+
+                    </div>
+            </div>
         </div>
-        <div class="text-center mt-6 lg:mt-10 hidden lg:block">
-            <a href="#form" class="w-48 h-auto rounded-xl franie p-5 font-normal uppercase text-white mx-auto"
+    
+        <div class="w-full lg:w-1/2 mt-10 lg:mt-10 relative flex lg:block justify-center">
+            <img src="assets/linha-vertical.png" alt="linha vertical" class="hidden lg:block">
+    
+            <div class="pl-0 lg:pl-5 relative lg:absolute top-0 left-0 lg:left-10 max-w-sm lg:max-w-xl">
+                        <p class="franie font-normal pt-5 lg:text-left">
+                            ✔ Gravação profissional: Captação de imagem e áudio de alta qualidade, edição profissional e identidade visual personalizada.
+                        </p>
+                    
+                    
+                        <p class="franie font-normal pt-5   lg:text-left">
+                            ✔ Plataforma robusta: Seu curso hospedado no Saúde Empreende, com suporte técnico e acesso simplificado para alunos.
+                        </p>
+    
+                        <p class="franie font-normal  pt-5   lg:text-left">
+                            ✔ Distribuição ampliada: Publicamos seu infoproduto na nossa plataforma e nas principais plataformas do mercado.
+                        </p>
+    
+                        <p class="franie font-normal  pt-5  lg:text-left">
+                            ✔ Planejamento estratégico: Estratégias otimizadas para potencializar a conversão e garantir vendas consistentes.
+                        </p>
+
+                        <p class="franie font-normal pt-5   lg:text-left">
+                            ✔ Time de alta performance: Equipe especializada e focada na escalabilidade do seu infoproduto. 
+                        </p>
+
+                        <p class="franie font-normal  pt-5  lg:text-left">
+                            ✔ Acompanhamento personalizado: Suporte contínuo para impulsionar crescimento e resultados.
+                        </p>
+            </div>
+        </div>
+    
+        <div class="text-center mt-6 lg:mt-10 lg:hidden mx-auto">
+            <a href="#form" class="w-48 h-auto rounded-xl franie p-3 font-normal uppercase text-white mx-auto"
                 style="background: linear-gradient(42deg, #153F3D -51.71%, #127F56 -7.5%, #11B66C 36.7%, #10DD7C 72.07%, #0FF686 103.02%, #0FFF8A 120.7%);">
                 Consulte aqui
         </a>
         </div>
-    </div>
+    
+    </section>
 
-    <div class="w-full lg:w-1/2 mt-10 lg:mt-10 relative flex lg:block justify-center">
-        <img src="assets/linha-vertical.png" alt="linha vertical" class="hidden lg:block">
 
-        <div class="pl-0 lg:pl-10 relative lg:absolute top-0 left-0 lg:left-10 max-w-sm lg:max-w-none">
-            <img src="assets/hearth.webp" class="p-3 rounded-xl mx-auto lg:mx-0"
-                width="79" height="51"
-                style="background: linear-gradient(42deg, #153F3D -51.71%, #127F56 -7.5%, #11B66C 36.7%, #10DD7C 72.07%, #0FF686 103.02%, #0FFF8A 120.7%);"
-                alt="coracao logo">
-                <div class="flex items-center pt-6 lg:pt-14">
-                    <img src="assets/verde.png" width="20" height="17" alt="" class="mr-3">
-                    <p class="franie font-normal  lg:text-left">
-                        Empreendedorismo médico e gestão de clínicas e consultórios.
-                    </p>
-                </div>
-                
-                
-                <div class="flex items-center pt-5 lg:pt-7">
-                    <img src="assets/verde.png" width="20" height="17" alt="" class="mr-3">
-                    <p class="franie font-normal   lg:text-left">
-                        Contabilidade e administração na saúde.
-                    </p>
-                </div>
 
-                <div class="flex items-center pt-5 lg:pt-7">
-                    <img src="assets/verde.png" width="20" height="17" alt="" class="mr-3">
-                    <p class="franie font-normal    lg:text-left">
-                        Marketing médico e estratégias digitais.
-                    </p>
-                </div>
+    <section class="w-full py-12 px-4 md:px-8  container mx-auto">
+        <div class=" mx-auto grid grid-cols-1 md:grid-cols-3 gap-32">
+    
+            <div class="border-2 border-gray-400 rounded-xl bg-white shadow-lg p-6 text-center flex flex-col">
+                <h1 class="lg:text-5xl fontNewBlacklight text-xl font-extralight uppercase mb-4">Plano <span class="fontNewBlackSemi font-semibold">Essencial</span> </h1>
+                <p class="text-sm franie font-extralight text-gray-600 mb-4">
+                    Para quem deseja um lançamento estruturado e profissional com todos os elementos essenciais para um infoproduto de sucesso.
+                </p>
+                <h4 class="text-lg font-extralight mb-3 franie text-left">O que inclui:</h4>
+                <ul class="text-left space-y-2 text-sm franie font-extralight text-black flex-grow">
+                    <li>✅ Funil de vendas completo e otimizado</li>
+                    <li>✅ Produção de criativos profissionais para anúncios</li>
+                    <li>✅ Tráfego pago estruturado com otimização contínua</li>
+                    <li>✅ Suporte estratégico para otimizar resultados</li>
+                    <li>✅ Página de vendas otimizada para conversão</li>
+                </ul>
+            </div>
+    
+            <div class="border-2 border-gray-400 rounded-xl text-white shadow-lg p-6 text-center flex flex-col"
+     style="background: linear-gradient(239deg, #153F3D -8.41%, #127F56 41.37%, #11B66C 91.14%, #10DD7C 130.96%, #0FF686 165.81%, #0FFF8A 185.72%), #EEE;">
+    <h3 class="lg:text-5xl fontNewBlacklight text-xl font-extralight uppercase mb-4">Plano <span class="fontNewBlackSemi font-semibold">Avançado</span></h3>
+    <p class="text-sm franie font-extralight text-white mb-4">
+        Para quem quer maximizar as conversões e aumentar as vendas com estratégias avançadas e acompanhamento intensivo.
+    </p>
+    <h4 class="text-lg font-semibold mb-3 text-left">Inclui tudo do Plano Essencial, mais:</h4>
+    <ul class="text-left franie font-extralight space-y-2 text-sm flex-grow">
+        <li>✅ Testes e otimização avançada do funil de vendas</li>
+        <li>✅ Suporte estratégico intensivo durante o lançamento</li>
+        <li>✅ Monitoramento e ajustes de métricas em tempo real</li>
+        <li>✅ Estratégias personalizadas para aumento de vendas</li>
+        <li>✅ Preparação de Produto Mínimo Viável (MVP)</li>
+    </ul>
+</div>
 
-                <div class="flex items-center pt-5 lg:pt-7">
-                    <img src="assets/verde.png" width="20" height="17" alt="" class="mr-3">
-                    <p class="franie font-normal   lg:text-left">
-                        Compliance e regulamentação na saúde.
-                    </p>
-                </div>
+    
+            <div class="border-2 border-gray-400 rounded-xl bg-gradient-to-b from-gray-800 to-black text-white shadow-lg p-6 text-center flex flex-col">
+                <h3 class="lg:text-5xl fontNewBlacklight text-xl font-extralight uppercase mb-4">Plano <span class="fontNewBlackSemi font-semibold">Premium</span></h3>
+                <p class="text-sm franie font-extralight text-white mb-4">
+                    Para quem quer um lançamento altamente estruturado e otimizado com uma solução completa e acompanhamento 360º.
+                </p>
+                <h4 class="text-lg franie font-extralight  mb-3 text-left">Inclui tudo do Plano Avançado, mais:</h4>
+                <ul class="text-left space-y-2 franie font-extralight text-sm flex-grow">
+                    <li>✅ 30 dias de trabalho pré-lançamento para construção de comunidade engajada</li>
+                    <li>✅ Estratégia de crescimento da audiência</li>
+                    <li>✅ Produção de conteúdo estratégico para redes sociais</li>
+                    <li>✅ Estruturação e automação do atendimento</li>
+                    <li>✅ Reestruturação do identidade visual</li>
+                    <li>✅ Reuniões estratégicas mensais detalhadas</li>
+                    <li>✅ Programa de Aceleração pós-lançamento</li>
+                </ul>
+            </div>
+    
         </div>
-    </div>
-
-    <div class="text-center mt-6 lg:mt-10 lg:hidden mx-auto">
-        <a href="#form" class="w-48 h-auto rounded-xl franie p-3 font-normal uppercase text-white mx-auto"
-            style="background: linear-gradient(42deg, #153F3D -51.71%, #127F56 -7.5%, #11B66C 36.7%, #10DD7C 72.07%, #0FF686 103.02%, #0FFF8A 120.7%);">
-            Consulte aqui
-    </a>
-    </div>
-
-</section>
+    </section>
+    
 
 
-<footer class="flex flex-wrap lg:flex-nowrap flex-1 gap-5 container mx-auto py-10 px-4 lg:px-0">
-    <div class="w-full lg:w-1/2">
-        <img src="assets/footer.webp" class="w-full h-auto" width="657" height="616" alt="imagem footer">
-    </div>
 
-    <div class="w-full lg:w-1/2 p-6 lg:p-32 rounded-xl" 
+
+
+
+<footer class="flex flex-wrap lg:flex-nowrap flex-1 gap-32 container mx-auto py-10 px-4 lg:px-0">
+    <div class="w-full lg:w-1/2 p-10 py-32 lg:p-32 rounded-xl" 
         style="background: linear-gradient(180deg, #153F3D 0%, #143837 10%, #143130 34%, #14302F 100%);">
         
         <div class="flex flex-col lg:flex-row items-center gap-5 lg:gap-8">
+            <h1 class="franie font-normal text-white pt-4 text-2xl lg:text-4xl uppercase">Garanta Seu  lançamento de Sucesso Agora!</h1>
             <div class="p-3 rounded-xl"
                 style="background: linear-gradient(42deg, #153F3D -51.71%, #127F56 -7.5%, #11B66C 36.7%, #10DD7C 72.07%, #0FF686 103.02%, #0FFF8A 120.7%);">
-                <img src="assets/hearth.webp" class="w-10 h-10 object-contain" width="96" height="96" alt="coracao logo">
+                <img src="assets/hearth.webp" class=" object-contain" width="96" height="96" alt="coracao logo">
             </div>
-            <h1 class="franie font-normal text-white pt-4 text-2xl lg:text-4xl uppercase">como<br>funciona?</h1>
         </div>
-
-        <div class="flex items-center pt-6 lg:pt-10">
-            <img src="assets/claroverde.png" width="20" height="17" alt="" class="mr-3">
-            <p class="fontNewBlackSemi font-semibold pt-3 lg:pt-5 text-white  lg:text-left">
-                Escolha a periodicidade das suas publicações (semanal, quinzenal ou mensal).
-            </p>
-        </div>
-
-        <div class="flex items-center pt-3 lg:pt-5">
-            <img src="assets/claroverde.png" width="20" height="17" alt="" class="mr-3">
-            <p class="fontNewBlackSemi font-semibold text-white  lg:text-left">
-                Tenha seu perfil e artigos destacados na plataforma.
-            </p>
-        </div>
-        <div class="flex items-center pt-3 lg:pt-5">
-            <img src="assets/claroverde.png" width="20" height="17" alt="" class="mr-3">
-            <p class="fontNewBlackSemi font-semibold text-white  lg:text-left">
-                Alcance um público altamente qualificado e engajado.
-            </p>
-        </div>
-
         <img src="assets/linha.png" width="414" height="1" class="pt-6 lg:pt-10 mx-auto lg:mx-0" alt="linha">
 
-        <div class="flex flex-col lg:flex-row items-center gap-3 pt-6 lg:pt-10">
-            <img src="assets/icone.webp" class="object-contain w-6 h-6" width="24" height="24" alt="Icone">
-            <img src="assets/junte.png" class="w-48 lg:w-auto" width="184.998" height="28.794" alt="Junte-se a nós">
-        </div>
+            <p class="fontNewBlackSemi font-semibold pt-3 lg:pt-5 text-white  lg:text-left">
+                Não perca tempo e aproveite essa oportunidade para transformar seu conhecimento em um infoproduto rentável. Escolha o plano ideal e comece sua jornada rumo ao sucesso digital!
+            </p>
 
         <p class="franie font-normal pt-3 text-white  lg:text-left">
-            Se você deseja expandir sua influência, fortalecer sua rede de contatos e ser reconhecido como um líder no setor da saúde, torne-se um colunista do Saúde Empreende!
+            👉 Clique no botão abaixo e fale com um especialista!
         </p>
 
         <div class="pt-6 lg:pt-10 text-center lg:text-left">
             <a href="#form" class="w-48 h-auto rounded-xl franie p-5 font-normal uppercase text-white"
                 style="background: linear-gradient(42deg, #153F3D -51.71%, #127F56 -7.5%, #11B66C 36.7%, #10DD7C 72.07%, #0FF686 103.02%, #0FFF8A 120.7%);">
-                Consulte aqui
+                falar com um especialista
         </a>
         </div>
+    </div>
+
+    <div class="w-full lg:w-1/2">
+        <img src="assets/footer.webp" class="w-full h-auto" width="657" height="616" alt="imagem footer" >
     </div>
 </footer>
 
