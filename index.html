@@ -10,7 +10,32 @@
     <link rel="shortcut icon" href="assets/icone-saude-empreende.png" type="image/x-icon">
 </head>
 <body>
-    <header class="flex flex-wrap lg:flex-nowrap py-16 my-16 justify-around container mx-auto px-4 rounded-xl" style="
+    <header class="w-full bg-white border-b border-gray-200 shadow-md fixed top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Logo ou Nome -->
+            <div class="text-2xl font-bold text-green-600"><img src="assets/logo-saude-empreende.svg" width="100" height="100" alt="logo"></div>
+    
+            <!-- Botão Hamburguer -->
+            <button id="menu-toggle" class="block lg:hidden focus:outline-none">
+                <svg class="w-8 h-8 text-green-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+    
+            <!-- Menu Desktop e Mobile -->
+            <nav id="menu" class="hidden lg:flex flex-col lg:flex-row absolute lg:relative top-full left-0 w-full lg:w-auto bg-white lg:bg-transparent border-t lg:border-none shadow-lg lg:shadow-none">
+                <a href="#home" class="block px-4 py-3 text-gray-700 hover:text-green-600">Home</a>
+                <a href="#sobre" class="block px-4 py-3 text-gray-700 hover:text-green-600">Sobre</a>
+                <a href="#seja-parceiro" class="block px-4 py-3 text-gray-700 hover:text-green-600">Seja Parceiro</a>
+                <a href="#seja-colunista" class="block px-4 py-3 text-gray-700 hover:text-green-600">Seja um Colunista</a>
+                <a href="#experience" class="block px-4 py-3 text-gray-700 hover:text-green-600">Experience</a>
+                <a href="#doctalk" class="block px-4 py-3 text-gray-700 hover:text-green-600">DocTalk</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <section class="flex flex-wrap lg:flex-nowrap py-16 my-16 justify-around container mx-auto px-4 rounded-xl" style="
     background: linear-gradient(180deg, 
         #153F3D 6%, 
         #143837 24%, 
@@ -46,7 +71,7 @@ infoproduto de sucesso!
             <img src="assets/arrow.webp" class="mx-auto pt-6 w-10 md:w-12 animate-updown" alt="seta">
         </div>
         
-    </header>
+    </section>
 
 
 
@@ -166,7 +191,71 @@ infoproduto de sucesso!
     
 
 
+    <section class="pb-16" id="form">
+        <div class="w-full lg:w-2/3 mx-auto pt-8 px-4 lg:px-8">
+            <h2 class="fontNewBlackSemi font-semibold uppercase text-xl lg:text-4xl text-center mb-6">Crie o seu infoproduto</h2>
+            <p class="text-center text-base lg:text-lg franie mb-6">Gostaria de lançar seu próprio curso online, mas não sabe por onde começar ou como produzir? O Saúde Empreende pode ser seu sócio na realização desse objetivo. Preencha o formulário abaixo e envie sua proposta de parceria, vamos analisar e logo daremos uma resposta.</p>
+        
+            <form action="#" method="POST" class="space-y-6">
+                
+                <!-- Campo de Input Personalizado -->
+                <div class="relative">
+                    <input type="text" id="nome" name="nome" required class="peer w-full border border-gray-400 rounded-xl px-4 py-3 bg-transparent focus:outline-none focus:ring-2 focus:ring-green-500" placeholder=" " />
+                    <label for="nome" class="absolute left-4 top-3 text-gray-500 text-sm transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-1 peer-focus:text-xs peer-focus:text-green-600">Nome Completo*</label>
+                </div>
+                
+                <!-- Outros campos seguindo o mesmo estilo -->
+                <div class="relative">
+                    <input type="email" id="email" name="email" required class="peer w-full border border-gray-400 rounded-xl px-4 py-3 bg-transparent focus:outline-none focus:ring-2 focus:ring-green-500" placeholder=" " />
+                    <label for="email" class="absolute left-4 top-3 text-gray-500 text-sm transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-1 peer-focus:text-xs peer-focus:text-green-600">E-mail Profissional*</label>
+                </div>
+        
+                <div class="relative">
+                    <input type="text" id="telefone" name="telefone" class="peer w-full border border-gray-400 rounded-xl px-4 py-3 bg-transparent focus:outline-none focus:ring-2 focus:ring-green-500" placeholder=" " />
+                    <label for="telefone" class="absolute left-4 top-3 text-gray-500 text-sm transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-1 peer-focus:text-xs peer-focus:text-green-600">Telefone/WhatsApp</label>
+                </div>
+        
+                <div class="relative">
+                    <input type="text" id="projeto" name="projeto" required class="peer w-full border border-gray-400 rounded-xl px-4 py-3 bg-transparent focus:outline-none focus:ring-2 focus:ring-green-500" placeholder=" " />
+                    <label for="projeto" class="absolute left-4 top-3 text-gray-500 text-sm transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-1 peer-focus:text-xs peer-focus:text-green-600">Nome do projeto:
+                    </label>
+                </div>
 
+                <div class="relative">
+                    <input type="text" id="ensinado" name="ensinado" required class="peer w-full border border-gray-400 rounded-xl px-4 py-3 bg-transparent focus:outline-none focus:ring-2 focus:ring-green-500" placeholder=" " />
+                    <label for="ensinado" class="absolute left-4 top-3 text-gray-500 text-sm transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-1 peer-focus:text-xs peer-focus:text-green-600">O que será ensinado:</label>
+                </div>
+
+                <div class="relative">
+                    <input type="text" id="vender" name="vender" required class="peer w-full border border-gray-400 rounded-xl px-4 py-3 bg-transparent focus:outline-none focus:ring-2 focus:ring-green-500" placeholder=" " />
+                    <label for="vender" class="absolute left-4 top-3 text-gray-500 text-sm transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-1 peer-focus:text-xs peer-focus:text-green-600">Por quanto você pretende vender:</label>
+                </div>
+                <div class="relative">
+                    <select id="modalidade" name="modalidade" required class="peer w-full border border-gray-400 rounded-xl px-4 py-3 bg-transparent focus:outline-none focus:ring-2 focus:ring-green-500 appearance-none">
+                        <option value="" disabled selected hidden></option>
+                        <option value="mensal">Assinatura Mensal</option>
+                        <option value="anual">Assinatura Anual</option>
+                        <option value="unica">Venda Única</option>
+                    </select>
+                    <label for="modalidade" class="absolute left-4 top-3 text-gray-500 text-sm transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-1 peer-focus:text-xs peer-focus:text-green-600">Modalidade de venda:</label>
+                </div>
+                
+
+                <!-- Textarea personalizado -->
+                <div class="relative">
+                    <textarea id="mensagem" name="mensagem" rows="4" class="peer w-full border border-gray-400 rounded-xl px-4 py-3 bg-transparent focus:outline-none focus:ring-2 focus:ring-green-500" placeholder=" "></textarea>
+                    <label for="mensagem" class="absolute left-4 top-3 text-gray-500 text-sm transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-1 peer-focus:text-xs peer-focus:text-green-600">Mensagem</label>
+                </div>
+
+        
+                <!-- Botão estilizado -->
+                <div class="text-center pt-4">
+                    <button  type="submit" class="bg-green-600 hover:bg-green-700 text-white font-semibold uppercase rounded-xl px-8 py-3 transition duration-300">Quero ser um colunista</button>
+                </div>
+            </form>
+        </div>
+        
+    </section>
 
 
 
@@ -192,10 +281,11 @@ infoproduto de sucesso!
         </p>
 
         <div class="pt-6 lg:pt-10 text-center lg:text-left">
-            <a href="#form" class="w-48 h-auto rounded-xl franie p-5 font-normal uppercase text-white"
-                style="background: linear-gradient(42deg, #153F3D -51.71%, #127F56 -7.5%, #11B66C 36.7%, #10DD7C 72.07%, #0FF686 103.02%, #0FFF8A 120.7%);">
-                falar com um especialista
-        </a>
+            <a href="#form" 
+    class="inline-block w-full max-w-xs lg:max-w-none lg:w-auto rounded-xl franie p-5 font-normal uppercase text-white text-center"
+    style="background: linear-gradient(42deg, #153F3D -51.71%, #127F56 -7.5%, #11B66C 36.7%, #10DD7C 72.07%, #0FF686 103.02%, #0FFF8A 120.7%);">
+    Falar com um especialista
+</a>
         </div>
     </div>
 
@@ -207,5 +297,21 @@ infoproduto de sucesso!
     <div class="mx-auto text-center py-32 container">
         <img src="assets/icone-saude-empreende.png" width="50" height="50" class="mx-auto" alt="logo-bmouse">
     </div>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+    
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    
+        // Fecha o menu ao clicar em um item (opcional)
+        document.querySelectorAll('#menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
 </body>
 </html>
